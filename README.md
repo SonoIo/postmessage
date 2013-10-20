@@ -7,8 +7,7 @@ Utility to communicate between windows.postMessage with IFrame and window.parent
 
 ### Server
 
-```
-#!javascript
+```js
 var server = new PostMessage({
 	target: iframe.contentWindow,
 	origin: window.location.protocol + '//' + window.location.host,
@@ -21,8 +20,7 @@ server.emit('myevent', { foo: 'bar' }, function (data) {
 
 ### Client
 
-```
-#!javascript
+```js
 var client = new PostMessage({
 	target: window.parent,
 	origin: window.location.protocol + '//' + window.location.host,
