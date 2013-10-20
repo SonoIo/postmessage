@@ -4,7 +4,6 @@
 Utility to communicate between windows.postMessage with IFrame and window.parent
 
 ## How to
-Instantiate the same class to 
 
 ### Server
 
@@ -35,3 +34,6 @@ client.on('myevent', function (data, fn) {
 });
 ```
 
+## License
+
+MIT
