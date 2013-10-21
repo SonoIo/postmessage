@@ -3,9 +3,9 @@
 
 Utility to communicate between windows.postMessage with IFrame and window.parent
 
-## How to
+# How to
 
-### Server
+## Server
 
 ```js
 var server = new PostMessage({
@@ -18,7 +18,7 @@ server.emit('myevent', { foo: 'bar' }, function (data) {
 });
 ```
 
-### Client
+## Client
 
 ```js
 var client = new PostMessage({
@@ -32,6 +32,11 @@ client.on('myevent', function (data, fn) {
 });
 ```
 
-## License
+## Destroy
+
+To remove all event listeners use `mypostmessage.destroy();` method.
+
+
+# License
 
 MIT
